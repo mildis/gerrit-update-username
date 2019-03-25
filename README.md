@@ -24,3 +24,8 @@ At the end of the process, review the changes then commit and push
 $ git commit -m 'update users for new org'
 $ git push origin HEAD:refs/meta/external-ids
 ```
+
+If gerrit accepted your changes, flush the caches and tou are done
+```
+$ ssh -p 29418 gerrit.example.com gerrit flush-caches --all
+```
