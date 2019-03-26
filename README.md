@@ -19,9 +19,8 @@ $ ../update-username.sh larry lana
 
 `update-ldap-username-attribute.sh` calls `update-username.sh` so don't do it twice.
 
-At the end of the process, review the changes then commit and push
+At the end of the process, review the commits then push
 ```
-$ git commit -m 'update users for new org'
 $ git push origin HEAD:refs/meta/external-ids
 ```
 
