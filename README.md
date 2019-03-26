@@ -3,7 +3,7 @@
 ```
 $ git clone All-Users.git
 $ cd All-Users
-$ git fetch origin refs/meta/external-ids:refs/origins/meta/external-ids
+$ git fetch origin refs/meta/external-ids:refs/remotes/origin/meta/external-ids
 $ git checkout FETCH_HEAD
 #
 # scripts should be outside the repo
@@ -25,7 +25,7 @@ $ git commit -m 'update users for new org'
 $ git push origin HEAD:refs/meta/external-ids
 ```
 
-If gerrit accepted your changes, flush the caches and tou are done
+If gerrit accepted your changes, flush the caches and you are done
 ```
 $ ssh -p 29418 gerrit.example.com gerrit flush-caches --all
 ```
