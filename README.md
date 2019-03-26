@@ -5,8 +5,11 @@ $ git clone All-Users.git
 $ cd All-Users
 $ git fetch origin refs/meta/external-ids:refs/remotes/origin/meta/external-ids
 $ git checkout FETCH_HEAD
-#
-# scripts should be outside the repo
+```
+scripts should be outside the repo
+```
+# update directory layout if needed
+$ ../update-layout.sh
 #
 # to update username based on a LDAP attribute
 $ ../update-ldap-username-attribute.sh sAMAccountName employeeID
