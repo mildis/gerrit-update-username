@@ -5,7 +5,7 @@ SHABIN="sha1sum"
 OLDID="${1}"
 NEWID="${2}"
 
-OLDEXTID=":${1}"
+OLDEXTID=":${1}\""
 
 for OLDREF in $(grep -Rl --exclude-dir=.git "${OLDEXTID}" .); do
 	OLDKEY=$(grep "${OLDEXTID}" ${OLDREF}|sed -e 's/\[externalId "\(.*\)"\]/\1/')
