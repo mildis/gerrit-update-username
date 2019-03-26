@@ -23,4 +23,5 @@ for OLDREF in $(grep -Rl --exclude-dir=.git "${OLDEXTID}" .); do
 
 	git rm -q ${OLDREF}
 	git add ${NEWREFDIR}/${NEWREFFILE}
+	git commit -m "update ${OLDKEY} to ${NEWKEY}"
 done	
