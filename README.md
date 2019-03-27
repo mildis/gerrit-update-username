@@ -1,7 +1,8 @@
 # Gerrit scripts to update username
 ## usage
+Due to security measures, clone must not goes thru gerrit but by direct access
 ```
-$ git clone All-Users.git
+$ git clone /srv/gerrit/git/All-Users.git
 $ cd All-Users
 $ git fetch origin refs/meta/external-ids:refs/remotes/origin/meta/external-ids
 $ git checkout FETCH_HEAD
